@@ -5,6 +5,189 @@
 using namespace std;
 
 
+
+// PASSING BY REFERENCE
+
+
+// EXAMPLE 4
+// void pass_by_ref1(int &num);
+// void pass_by_ref2(string &s);
+// void pass_by_ref3(vector<string> &v);
+// void print_vector(const vector<string> &v);
+
+// int main()
+// {
+//     vector<string> three_stooges {"Larry", "Curly", "Moe"};
+//     print_vector(three_stooges);
+//     pass_by_ref3(three_stooges);
+//     print_vector(three_stooges);
+// }
+
+// void pass_by_ref1(int &num)
+// {
+//     num = 1000;
+// }
+
+// void pass_by_ref2(string &s)
+// {
+//     s = "Changed";
+// }
+
+// void pass_by_ref3(vector<string> &vec)
+// {
+//     vec.clear();
+// }
+
+// void print_vector(const vector<string> &vec)
+// {
+//     for (auto str: vec)
+//     {
+//         cout << str << endl;
+//     }
+// }
+
+
+// EXAMPLE 3
+// void print(const vector<int> &vec);
+
+// int main()
+// {
+//     vector<int> data { 1, 2, 3, 4, 5 };
+//     print(data);
+// }
+
+
+// void print(const vector<int> &vec)
+// {
+//     for (auto num: vec)
+//         cout << num << endl;
+// }
+
+
+
+
+// EXAMPLE 2
+// void swap(int &a, int &b);
+
+// int main()
+// {
+//     int x{10}, y{20};
+//     cout << x << " " << y << endl;
+//     swap(x, y);
+//     cout << x << " " << y << endl;
+// }
+
+
+// void swap(int &a, int &b)
+// {
+//     int temp = a;
+//     a = b;
+//     b = temp;
+// }
+
+
+
+// EXAMPLE 1
+// void scale_number(int &num);
+
+
+// int main()
+// {
+//     int number {1000};
+//     scale_number(number);
+//     cout << number << endl;
+// }
+
+
+// void scale_number(int &num)
+// {
+//     if (num > 100)
+//         num = 100;
+// }
+
+
+
+
+
+
+
+
+
+// PASSING ARRAYS TO FUNCTIONS
+
+// EXAMPLE 3
+// using const in the array parameter will tell compiler to throw error if we try to change the array values.
+// void print_array(const int numbers[], size_t size)
+// {
+//     for (size_t i{0}; i < size; i++)
+//         cout << numbers[i] << endl;
+// }
+
+// void set_array(int arr[], size_t size, int value)
+// {
+//     for (size_t i = 0; i < size; i++)
+//     // changes actual array values since arrays are passed by reference.
+//         arr[i] = value;
+// }
+
+
+// int main()
+// {
+//     int my_scores[] { 100, 98, 90, 86, 84 };
+//     print_array(my_scores, 5);
+//     set_array(my_scores, 5, 100);
+//     print_array(my_scores, 5);
+//     cout << endl;
+// }
+
+// EXAMPLE 2
+// void zero_array(int numbers[], size_t size)
+// {
+//     for (size_t i{0}; i < size; i++)
+//         // this changes the actual array values as the function did not make a copy of the array.
+//         // this can be fixed by adding const before "int numbers[]" int the function parameter.
+//         numbers[i] = 0;
+// }
+
+// void print_array(int numbers[], size_t size)
+// {
+//     for (size_t i{0}; i < size; i++)
+//         cout << numbers[i] << endl;
+// }
+
+// int main()
+// {
+//     int my_numbers[] { 1, 2, 3, 4, 5 };
+//     zero_array(my_numbers, 5);
+//     print_array(my_numbers, 5);
+// }
+
+
+
+// EXAMPLE 1 
+
+// void print_array(int numbers[], size_t size);
+
+// int main()
+// {
+//     int my_numbers[] { 1, 2, 3, 4, 5 };
+//     print_array(my_numbers, 5);
+// }
+
+// // ARRAYS ARE PASSED BY REFERENCE SO WE INCLUDE THE SIZE OF THE ARRAY PASSED.
+// void print_array(int numbers[], size_t size)
+// {
+//     for (size_t i{0}; i < size; i++)
+//         cout << numbers[i] << endl;
+// }
+
+
+
+
+
+
+
+
 // OVERLOADING FUNCTIONS
 
 // OVERLOADING EX 2
