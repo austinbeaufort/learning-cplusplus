@@ -1,12 +1,84 @@
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 
 // OVERLOADING FUNCTIONS
+
+// OVERLOADING EX 2
+// void print (int);
+// void print(double);
+// void print(string);
+// void print(string, string);
+// void print(vector<string>);
+
+// int main()
+// {
+//     print(2);
+//     print(3.001);
+//     print("Hi Joe!");
+//     print("Computer", "Science");
+
+//     vector<string> three_stooges { "Larry", "Curly", "Moe" };
+//     print(three_stooges);
+// }
+
+
+// void print (int num)
+// {
+//     cout << "Printing int: " << num << endl;
+// }
+
+// void print(double num)
+// {
+//     cout << "Printing double: " << num << endl;
+// }
+
+
+// void print(string my_string)
+// {
+//     cout << "Printing string: " << my_string << endl;
+// }
+
+
+// void print(string my_string, string my_string2)
+// {
+//     cout << "Printing string: " << my_string <<" and " << my_string2 << endl;
+// }
+
+
+// void print(vector<string> my_vec)
+// {
+//     cout << "Printing Vector of Strings: ";
+//     for (auto item: my_vec)
+//         cout << item << " ";
+//     cout << endl;
+// }
+
+
+// OVERLOADING EX 1
+// int add_numbers(int, int);
+// double add_numbers(double, double);
+
+
+// int main()
+// {
+//     cout << add_numbers(10, 20) << endl;
+//     cout << add_numbers(10.0, 20.0) << endl;
+// }
+
+
+// int add_numbers(int a, int b)
+// {
+//     return a + b;
+// }
+
+// double add_numbers(double a, double b)
+// {
+//     return a + b;
+// }
 
 
 
