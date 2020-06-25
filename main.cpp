@@ -5,6 +5,119 @@
 using namespace std;
 
 
+// POINTER ARITHMETIC
+
+// EXAMPLE 1
+int main()
+{
+    cout << boolalpha;
+
+    string s1 {"Frank"};
+    string s2 {"Frank"};
+
+    string *p1 {&s1};
+    string *p2 {&s2};
+    string *p3 {&s1};
+    // compares the memory address, not the data contained inside the address
+    cout << (p1 == p2) << endl;
+    cout << (p1 == p3) << endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// RELATIONSHIP BETWEEN ARRAYS AND POINTERS
+
+// EXAMPLE 4
+// int main()
+// {
+//     int scores[] {100, 95, 98};
+//     int *scores_ptr {scores};
+//     // pointer subscript noation
+//     cout << scores_ptr[0] << endl;
+//     cout << scores_ptr[1] << endl;
+//     cout << scores_ptr[2] << endl;
+//     // pointer offset notation
+//     cout << *scores_ptr << endl;
+//     cout << *(scores_ptr + 1) << endl;
+//     cout << *(scores_ptr + 2) << endl;
+//     // Array offset notation
+//     cout << *scores << endl;
+//     cout << *(scores + 1) << endl;
+//     cout << *(scores + 2) << endl;
+// }
+
+
+// EXAMPLE 3
+// int main()
+// {
+//     int scores[] { 100, 95, 89 };
+//     int *score_ptr { scores };
+//     cout << score_ptr << endl;
+//     // gets next mem address of array
+//     cout << (score_ptr + 1) << endl;
+//     cout << (score_ptr + 2) << endl;
+
+//     // dereferencing the pointer to access specific indicies of the array.
+//     cout << *score_ptr << endl;
+//     cout << *(score_ptr + 1) << endl;
+//     cout << *(score_ptr + 2) << endl;
+// }
+
+
+// EXAMPLE 2
+// int main()
+// {
+//     int scores[] { 100, 95, 89 };
+//     int *score_ptr { scores };
+
+//     cout << score_ptr[0] << endl;
+//     cout << score_ptr[1] << endl;
+//     cout << score_ptr[2] << endl;
+// }
+
+
+// EXAMPLE 1
+// int main()
+// {
+//     int scores[] { 100, 95, 89 };
+//     // mem address of array index 0
+//     cout << scores << endl;
+//     // dereferencing the address to get value at index 0
+//     cout << *scores << endl;
+
+//     int *score_ptr {scores};
+//     // same mem address, prints array index 0 address
+//     cout << score_ptr << endl;
+//     // dereferences the address and prints 100
+//     cout << *score_ptr << endl;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // DYNAMIC MEMORY ALLOCATION
 
 // EXAMPLE 4
