@@ -4,25 +4,113 @@
 //POINTERS AND REFERENCES
 using namespace std;
 
+// PASSING POINTERS TO A FUNCTION
+
+
+
+
+
+
+
+
+
+
+
+// CONST AND POINTERS
+
+// EXAMPLE 1
+// int main()
+// {
+//     int high_score {100};
+//     int low_score {65};
+//     const int *score_ptr { &high_score };
+
+//     cout << *score_ptr << endl;
+
+//     score_ptr = &low_score;
+
+//     cout << *score_ptr << endl;
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 
 // POINTER ARITHMETIC
 
+// EXAMPLE 4
+// int main()
+// {
+//     char name[] {"Frank"};
+
+//     char *char_ptr1 {nullptr};
+//     char *char_ptr2 {nullptr};
+
+//     char_ptr1 = &name[0];
+//     char_ptr2 = &name[3];
+
+//     cout << *char_ptr2 << " is " << (char_ptr2 - char_ptr1) << " characters away from " << *char_ptr1 << endl;
+// }
+
+
+
+// EXAMPLE 3
+// int main()
+// {
+//     int scores[] { 100, 95, 89, 68, -1 };
+//     int *score_ptr {scores};
+
+//     while (*score_ptr != -1)
+//     {
+//         // dereference pointer, print value
+//         cout << *score_ptr << endl;
+//         // go to next memory address
+//         score_ptr += 1;
+//     }
+// }
+
+
+
+// EXAMPLE 2
+// int main()
+// {
+//     cout << boolalpha;
+//     string s1 {"Frank"};
+//     string s2 {"Frank"};
+
+//     string *p1 {&s1};
+//     string *p2 {&s2};
+//     string *p3 {&s1};
+//     // dereferencing the pointers before comparing. Both with print true.
+//     cout << (*p1 == *p2) << endl;
+//     cout << (*p1 == *p3) << endl;
+// }
+
+
+
 // EXAMPLE 1
-int main()
-{
-    cout << boolalpha;
+// int main()
+// {
+//     cout << boolalpha;
 
-    string s1 {"Frank"};
-    string s2 {"Frank"};
+//     string s1 {"Frank"};
+//     string s2 {"Frank"};
 
-    string *p1 {&s1};
-    string *p2 {&s2};
-    string *p3 {&s1};
-    // compares the memory address, not the data contained inside the address
-    cout << (p1 == p2) << endl;
-    cout << (p1 == p3) << endl;
-}
-
+//     string *p1 {&s1};
+//     string *p2 {&s2};
+//     string *p3 {&s1};
+//     // compares the memory address, not the data contained inside the address
+//     cout << (p1 == p2) << endl;
+//     cout << (p1 == p3) << endl;
+// }
 
 
 
