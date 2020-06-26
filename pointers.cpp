@@ -4,14 +4,122 @@
 //POINTERS AND REFERENCES
 using namespace std;
 
+
+// RETURNING A POINTER FROM A FUNCTION
+
+
+
+
+
+
+
+
+
+
+
 // PASSING POINTERS TO A FUNCTION
 
+// EXAMPLE 4
+// cannot change items int the vector, and cannot change where the vector points to.
+// void display(const vector<string> *const vec)
+// {
+//     for (auto str: *vec)
+//         cout << str << " ";
+//     cout << endl;
+// }
+
+
+// void display(int *array, int sentinel)
+// {
+//     while (*array != sentinel)
+//         cout << *array++ << " ";
+//     cout << endl;
+// }
+
+
+// int main()
+// {
+//     cout << "******************************" << endl;
+//     vector<string> stooges {"Larry", "Curly", "Moe"};
+//     display(&stooges);
+
+//     cout << "\n******************************" << endl;
+//     int scores[] {100, 98, 97, 79, 85, -1};
+//     display(scores, -1);
+// }
 
 
 
 
 
+// EXAMPLE 3
+// void swap(int *a, int *b)
+// {
+//     int temp = *a;
+//     *a = *b;
+//     *b = temp;
+// }
 
+// int main()
+// {
+//     int x {100}, y {200};
+//     cout << "\nx: " << x << endl;
+//     cout << "y: " << y << endl;
+
+//     swap(&x, &y);
+
+//     cout << "\nx: " << x << endl;
+//     cout << "y: " << y << endl;
+// }
+
+
+
+
+// EXAMPLE 2
+// void double_data(int *int_ptr)
+// {
+//     *int_ptr *= 2;
+// }
+
+// void print_value(int value)
+// {
+//     cout << "Value: " << value << endl;
+// }
+
+// int main()
+// {
+//     int value {10};
+//     int *int_ptr {nullptr};
+//     print_value(value);
+
+//     double_data(&value);
+//     print_value(value);
+
+//     cout << "*********************************" << endl;
+
+//     int_ptr = &value;
+//     double_data(int_ptr);
+//     print_value(value);
+// }
+
+
+
+// EXAMPLE 1
+// void double_data(int *int_ptr)
+// {
+//     // dereference the memory address and multiply by 2.
+//     *int_ptr *= 2;
+// }
+
+
+// int main()
+// {
+//     int value {10};
+//     cout << value << endl;
+//     // double_data expects a memory address that can be dereferenced.
+//     double_data(&value);
+//     cout << value << endl;
+// }
 
 
 
