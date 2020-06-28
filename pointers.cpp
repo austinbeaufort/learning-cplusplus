@@ -4,6 +4,64 @@
 //POINTERS AND REFERENCES
 using namespace std;
 
+// REFERENCES
+
+// EXAMPLE 3
+
+// int main()
+// {
+//     int num {100};
+//     int &ref {num};
+
+//     cout << num << endl;
+//     cout << ref << endl;
+
+//     num = 200;
+//     cout << "**********************" << endl;
+//     cout << num << endl;
+//     // 200, the reference changes along with the num
+//     cout << ref << endl;
+// }
+
+
+// EXAMPLE 2
+// int main()
+// {
+//     vector<string> stooges { "Larry", "Curly", "Moe" };
+
+//     // change the actual value in each memory address
+//     for (auto &str: stooges)
+//         str = "funny";
+    
+//     for (auto const &str: stooges)
+//         cout << str << endl;
+
+// }
+
+
+// EXAMPLE 1
+// int main()
+// {
+//     // passing by value will not change the actual vector.
+//     vector<string> stooges {"Larry", "Curly", "Moe"};
+
+//     for (auto str: stooges)
+//         // does not change actual vector, these are copies, stooges is passed by value, not reference here.
+//         str = "funny";
+    
+//     for (auto str: stooges)
+//         cout << str << endl;
+// }
+
+
+
+
+
+
+
+
+
+
 
 // RETURNING A POINTER FROM A FUNCTION
 
