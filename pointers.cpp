@@ -6,6 +6,28 @@ using namespace std;
 
 // REFERENCES
 
+// EXAMPLE 4
+int main()
+{
+    vector<string> stooges { "Larry", "Moe", "Curly" };
+    
+    for (auto str: stooges)
+        // str is a copy, will not change actual vector
+        str = "funny";
+
+    for (auto str: stooges)
+        // again each str is a copy, no danger in changing actual vector
+        cout << str << endl;
+    
+    for (auto &str: stooges)
+        // NOT a copy, each str is now a reference to the actual vector string and will change.
+        str = "funny";
+
+    for (auto const &str: stooges)
+        // const makes sure we do not accidently change a vector reference, since this function should only print.
+        cout << str << endl;
+}
+
 // EXAMPLE 3
 
 // int main()
