@@ -1,32 +1,84 @@
 #include <iostream>
 #include <string>
 #include <vector>
-//POINTERS AND REFERENCES
+
 using namespace std;
+
+
+// SECTION CHALLENGE
+
+// int *apply_all(const int *const array1, size_t size1, const int *const array2, size_t size2)
+// {
+//     const size_t size_to_allocate = size1 * size2;
+//     int *new_heap_array = new int[size_to_allocate];
+
+//     int position {0};
+//     for (size_t i{0}; i < size1; i++)
+//     {
+//         for (size_t j{0}; j < size2; j++)
+//         {
+//             int product = array1[i] * array2[j];
+//             new_heap_array[position] = product;
+//             position += 1;
+//         }
+//     }
+//     return new_heap_array;
+// }
+
+// void print(const int *const array, size_t size)
+// {
+//     cout << "[ ";
+//     for (size_t i{0}; i < size; i++)
+//         cout << *(array + i) << " ";
+//     cout << "]" << endl;    
+
+// }
+
+
+// int main()
+// {
+//     int array1[] { 1, 2, 3, 4, 5 };
+//     int array2[] { 10, 20 , 30 };
+
+//     cout << "Array 1: ";
+//     print(array1, 5);
+
+//     cout << "Array 2: ";
+//     print(array2, 3);
+
+//     int *products_array = apply_all(array1, 5, array2, 3);
+
+//     print(products_array, 15);
+
+//     delete [] products_array;
+// }
+
+
+
 
 // REFERENCES
 
 // EXAMPLE 4
-int main()
-{
-    vector<string> stooges { "Larry", "Moe", "Curly" };
+// int main()
+// {
+//     vector<string> stooges { "Larry", "Moe", "Curly" };
     
-    for (auto str: stooges)
-        // str is a copy, will not change actual vector
-        str = "funny";
+//     for (auto str: stooges)
+//         // str is a copy, will not change actual vector
+//         str = "funny";
 
-    for (auto str: stooges)
-        // again each str is a copy, no danger in changing actual vector
-        cout << str << endl;
+//     for (auto str: stooges)
+//         // again each str is a copy, no danger in changing actual vector
+//         cout << str << endl;
     
-    for (auto &str: stooges)
-        // NOT a copy, each str is now a reference to the actual vector string and will change.
-        str = "funny";
+//     for (auto &str: stooges)
+//         // NOT a copy, each str is now a reference to the actual vector string and will change.
+//         str = "funny";
 
-    for (auto const &str: stooges)
-        // const makes sure we do not accidently change a vector reference, since this function should only print.
-        cout << str << endl;
-}
+//     for (auto const &str: stooges)
+//         // const makes sure we do not accidently change a vector reference, since this function should only print.
+//         cout << str << endl;
+// }
 
 // EXAMPLE 3
 
